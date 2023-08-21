@@ -114,34 +114,6 @@ bool isPalindrome(Node *&head)
     return true;
 }
 
-Node *reorderList(Node *&head)
-{
-    Node *curr = head;
-    Node *last = head;
-    Node *storeCurrNext = NULL;
-    while (last->next != NULL)
-    {
-        last = last->next;
-    }
-
-    while (curr != last)
-    {
-        storeCurrNext = curr->next;
-        curr->next = last;
-        curr = storeCurrNext;
-        last->next = storeCurrNext;
-        // if (curr->next->next == NULL)
-        // {
-        //     curr = last;
-        //     last->next = NULL;
-        // }
-        curr->next->next = last;
-        last->next = NULL;
-    }
-
-    return head;
-}
-
 int main()
 {
     Node *newNode = new Node(1);
