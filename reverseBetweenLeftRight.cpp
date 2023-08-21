@@ -2,6 +2,7 @@
 using namespace std;
 #define mod 1e9 + 7
 typedef long long ll;
+
 class Solution
 {
 public:
@@ -30,6 +31,7 @@ public:
         return head;
     }
 };
+
 int main()
 {
     ios_base::sync_with_stdio(false);
