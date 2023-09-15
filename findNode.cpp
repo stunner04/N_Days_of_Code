@@ -80,3 +80,5 @@ ListNode *findNode(ListNode *head, int n)
     }
     return curr;
 }
+
+// https://www.codingninjas.com/studio/problems/find-node_920443
